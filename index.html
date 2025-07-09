@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+    body {
+        background: whitesmoke;
+    } #page {
+        width: 928px;
+        max-width: 100%;
+        height: 928px;
+        margin: 36px auto;
+        background: white;
+        border: 1px solid dimgray;
+        box-shadow: 2px 3px 6px dimgray;
+        display: grid;
+        grid-template: auto auto auto / auto auto auto;
+    } #page div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } #page div:nth-child(1) {
+        background: lightblue;
+    } #page div:nth-child(2) {
+        background: lightgreen;
+    } #page div:nth-child(3) {
+        background: lavender;
+    } #page div:nth-child(4) {
+        background: goldenrod;
+    } #page div:nth-child(5) {
+        background: gray;
+    } #page div:nth-child(6) {
+        background: chartreuse;
+    } #page div:nth-child(7) {
+        background: turquoise;
+    } #page div:nth-child(8) {
+        background: paleturquoise;
+    } #page div:nth-child(9) {
+        background: yellow;
+    } h1 {
+        z-index: 1;
+        position: absolute;
+        top: 36px;
+        left: 48px;
+        background: black;
+        width: 600px;
+        color: white;
+        padding: 6px;
+    } img {
+        width: 100%;
+    } @media only screen and (max-width: 750px) {
+        #page {
+            grid-template: repeat(9, auto) / auto;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <h1>Text at top of page.</h1>
+    <div id="page">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
